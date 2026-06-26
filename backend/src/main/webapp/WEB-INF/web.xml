@@ -8,13 +8,13 @@
 
     <!-- Context Listener for Scheduler Lifecycle -->
     <listener>
-        <listener-class>com.monitor.scheduler.SyncScheduler</listener-class>
+        <listener-class>com.monitor.SyncScheduler</listener-class>
     </listener>
 
     <!-- Filters -->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
-        <filter-class>com.monitor.filter.CharacterEncodingFilter</filter-class>
+        <filter-class>com.monitor.CharacterEncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>CharacterEncodingFilter</filter-name>
@@ -23,7 +23,7 @@
 
     <filter>
         <filter-name>CorsFilter</filter-name>
-        <filter-class>com.monitor.filter.CorsFilter</filter-class>
+        <filter-class>com.monitor.CorsFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>CorsFilter</filter-name>
